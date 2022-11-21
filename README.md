@@ -132,4 +132,3 @@ setelah itu kita print variabel `a` jika sudah di dapat nilai kurang dari 0.5
 
 ### Output : 
 ![Output 2-2](/Image/Output-2-2.png)
-\
