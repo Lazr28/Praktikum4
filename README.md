@@ -1,4 +1,4 @@
-# PRAKTIKUM
+# PRAKTIKUM 4
 ## STRUKTUR KONDIRI DAN PERULANGAN
 
 **Latihan 1**
@@ -26,7 +26,7 @@ lalu kita buat kondisi menggunakan `if`\
  jika kedua kondisi di atas tidak ada yang sesuai / `true` maka akan menjalankan sintak yang ada didalam `else`
 
 ### Output
-![Screenshot Output 1](/Image/Output-1-1.png)
+![Screenshot Output 1](/Praktikum4/Image/Output-1-2.png)
 \
 \
 \
@@ -72,4 +72,64 @@ lalu jika kondisi pertama tidak seusai, maka akan melakukan kondisi seterusnya d
 \
 ## Perulangan
 
-**Latihan 1**
+**Latihan 1**\
+Program perulangan bertingkat (nested) for.\
+\
+### Code :
+```python
+start = 0;
+stop = 10;
+for i in range(10):
+    for j in range(start,stop):
+        print(j, sep="  ", end=" ")
+        if j < 10 :
+            print('{0:>2}'.format(""), end="")
+        else :
+            print('{0:>1}'.format(""), end="")
+    start+=1
+    stop+=1
+    print("")
+```
+>**Penjelasan**\
+Pada kode program diatas.\
+kita membuat variable `start` dan `stop` dulu untuk menampung angka pertama dan terakhir dari sintaks range yang akan di tambah seiring perulangan `for` nya.\
+pertama kita buat for dengan pengulangan 10x\
+lalu didalamnya (nested) kita buat `for` kembali dengan melakukan print Range dengan parameter `start` dan `stop` nya menggunakan variabel yang sudah kita deklarasikan di awal.
+setelah itu gunakan kondisi if `j` kurang dari 10 maka akan menambahkan padding 2, sedangkan jika `j` tidak sesuai kondisi ( `else` ) atau `j` lebih dari sama dengan 10 maka padding yang digunakan hanya 1.\
+\
+`if` di atas digunakan untuk menentukan banyaknya padding yang akan di gunakan.
+\
+setelah itu kita tambahkan variabel `start` dan `stop` dengan 1. ( increment 1)\
+lalu tambahkan `print("")` agar setah print angka stop akan pindah baris.\
+
+
+### Output : 
+![Output 2-1](/Image/Output-2-1.png)
+
+**Latihan 2**\
+Program menampilkan Angka acak dibawah 0.5 sebanyak N ( N ditentukan oleh user ).
+
+### Code :
+```python
+import random
+n = input("Masukan Jumlah N : ")
+n = int(n)
+for i in range(n) :
+    a = random.random()
+    while (a > 0.5) :
+        a =random.random()
+    print(a)  
+```
+>**Penjelasan**\
+Pada kode diatas.\
+pertama tama kita import lib `random`
+lalu kita buat variabel `n` dengan isi berasal dari inputan user.\
+setelah itu kita buat perulangan `for` dengan banyak perulangan sebanyak n.\
+lalu masukan angka random ke dalam variabel `a`\
+setelah itu kita cek menggunakan `while` jika variabel `a` berisi lebih dari 0.5\
+kita akan mengubah variabel tersebut dengan angka random kembali.
+setelah itu kita print variabel `a` jika sudah di dapat nilai kurang dari 0.5
+
+### Output : 
+![Output 2-2](/Image/Output-2-2.png)
+\
