@@ -1,11 +1,8 @@
 # PRAKTIKUM
 ### STRUKTUR KONDIRI DAN PERULANGAN
------------
-#### 1. Strukur Kondisi
 
 **Latihan 1**\
 Program menentukan bilangan terbesar dari 2 bilangan yang di input user / runtime.
-\
 \
 \
 Code : 
@@ -23,4 +20,14 @@ else:
 ```
 >**Penjelasan**\
 pada kode program di atas.\
-pertama tama kita membuat variabel yang menampung input bilangan dari keyboard / user.
+pertama tama kita membuat variabel yang menampung input bilangan dari keyboard / user.\
+lalu kita buat kondisi menggunakan `if`\
+ kondisi pertama akan mengecek apakah nilai dari variabel `a` lebih besar dari variabel `b`\
+ kondisi kedua mengecek apakah `a` dan `b` memiliki nilai yang sama.\
+ jika kedua kondisi di atas tidak ada yang sesuai / `true` maka akan menjalankan sintak yang ada didalam `else`
+
+\
+\
+\
+**Latihan 2**
+
