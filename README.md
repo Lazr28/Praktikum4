@@ -26,7 +26,7 @@ lalu kita buat kondisi menggunakan `if`\
  jika kedua kondisi di atas tidak ada yang sesuai / `true` maka akan menjalankan sintak yang ada didalam `else`
 
 ### Output
-![Screenshot Output 1](/Praktikum4/Image/Output-1-2.png)
+![Screenshot Output 1](/Image/Output-1-2.png)
 \
 \
 \
